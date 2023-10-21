@@ -1,0 +1,231 @@
+%-------------------------
+% Resume in Latex
+% Author : Adeland Luo
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-15pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-20pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-15pt}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Adeland Luo} \\ \vspace{3pt}
+    \small
+   \hspace{.5pt}{(646)327-1390}
+    $|$
+    \hspace{.5pt} \href{mailto:adelandluo1@gmail.com}{adelandluo1@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/adelandluo/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/adeland}{GitHub} 
+\end{center}
+%----------- \\EDUCATION -----------
+
+\section{\hspace{.35cm}Education}
+\vspace{10pt}
+  \resumeSubHeadingListStart
+    \resumeEducationHeading
+      {University at Buffalo
+      }{Buffalo, New York}
+      {Bachelors of Science in Computer Science   \textbf{}}{ December 2025 } 
+    
+%----------- WORK EXPERIENCE -----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sameasy Design \& Print}{Brooklyn, New York}
+      {Graphic Design Assistant}{Jul 2021 \textbf{--} Aug 2023}
+      \vspace{1pt}
+        \resumeItemListStart
+            \resumeItem{Designed and edited advertisements for clients in the local neighborhood utilizing Adobe Photoshop. }
+            \resumeItem{Created custom merchandise and printed large banners for customers utilizing RIP Queue and Graphtec.}  
+        \resumeItemListEnd
+    \resumeSubheading
+      {MakerState}{New York, New York}
+      {STEM Instructor}{Feb 2022 \textbf{--} Aug 2022}
+      \vspace{1pt}
+        \resumeItemListStart
+            \item {Taught cohorts of younger students basics in Scratch and how to create functional code alongside programming basics for objects and robotics in Lego Mindstorms.}
+            \item{Instructed multiple classes of twenty students on designing and printing 3-D models in TinkerCAD.}
+            \item{Created STEM curriculum for students and developed projects to challenge students during class. Projects included challenges such as: Modeling projects with step by step instructions in TinkerCAD, programming problems with instructions on how to solve them in Scratch, and lecture-like presentations on basic programming concepts.}
+        \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{1pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+        {\textbf{Local (Python, Flask, React)}}{}
+            \resumeItemListStart
+            \resumeItem{Hackathon project implementing an AI learning module that matches users with companies and local startups in the Buffalo-Niagara area alongside an interactive map that displays all registered companies and their respective locations.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Trading Models (Python, Pandas, Zipline)}}{}
+          \resumeItemListStart
+            \resumeItem{In-progress Python project focused on modeling market data and formulating trading strategies for backtesting on historical American financial markets. Aimed at gaining insights into the impact of volatility and risk factors on decision-making processes during strategy development.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Visual Novel (Python, Ren'Py, Stable Diffusion)}}{}
+            \resumeItemListStart
+            \resumeItem{In-progress novel game written in Ren’Py driven by user input with multiple endings. Characters art and background art are personally generated utilizing NovelAI image generation and image diffusion.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Text Based Dungeon Game (Python)}}{}
+          \resumeItemListStart
+            \resumeItem{A Python user input driven text based game named Marlene’s Dungeon with multiple endings and interactive dialogue.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Sudoku Solver (Python) }}{}
+      \resumeItemListStart
+            \resumeItem{Python sudoku solving program that takes in user input and automatically solves missing squares in a 9x9 Sudoku grid.
+}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{4pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming Languages}{ Proficient: Python ; Familiar: Java, C++, HTML, TypeScript and JavaScript.} \\ \vspace{3pt}
+        
+        \textbf{Certifications/Proficiencies}{ Experience in Flask, MongoDB, Docker, Pandas. Autodesk AutoCAD certified, proficient in Autodesk applications, Microsoft Office, and Adobe applications. } \\ \vspace{3pt}
+        
+        \textbf{Languages}{ English, Conversationally fluent Cantonese.}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
