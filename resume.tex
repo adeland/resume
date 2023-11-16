@@ -115,6 +115,12 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \textbullet\hspace{0.5em}{#1 \vspace{-2pt}}
+  }
+}
+
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -147,12 +153,11 @@
 \vspace{10pt}
   \resumeSubHeadingListStart
     \resumeEducationHeading
-      {University at Buffalo
-      }{Buffalo, New York}
-      {Bachelors of Science in Computer Science   \textbf{}}{ December 2025 } 
-    
-%----------- WORK EXPERIENCE -----------
+    {\hspace{4mm}University at Buffalo}{ Buffalo, New York}
+    {\hspace{4mm}Bachelors of Science in Computer Science\textbf{}}{December 2025 } 
 
+
+     \vspace{-10pt}
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -160,17 +165,17 @@
       {Graphic Design Assistant}{Jul 2021 \textbf{--} Aug 2023}
       \vspace{1pt}
         \resumeItemListStart
-            \resumeItem{Designed and edited advertisements for clients in the local neighborhood utilizing Adobe Photoshop. }
-            \resumeItem{Created custom merchandise and printed large banners for customers utilizing RIP Queue and Graphtec.}  
+            \resumeItem{Designed and edited advertisements for over 200 local businesses utilizing Adobe Photoshop. }
+            \resumeItem{Created custom merchandise and printed large banners for clients with RIP Queue and Graphtec.}  
         \resumeItemListEnd
     \resumeSubheading
       {MakerState}{New York, New York}
       {STEM Instructor}{Feb 2022 \textbf{--} Aug 2022}
       \vspace{1pt}
         \resumeItemListStart
-            \item {Taught cohorts of younger students basics in Scratch and how to create functional code alongside programming basics for objects and robotics in Lego Mindstorms.}
-            \item{Instructed multiple classes of twenty students on designing and printing 3-D models in TinkerCAD.}
-            \item{Created STEM curriculum for students and developed projects to challenge students during class. Projects included challenges such as: Modeling projects with step by step instructions in TinkerCAD, programming problems with instructions on how to solve them in Scratch, and lecture-like presentations on basic programming concepts.}
+            \item {Taught 10 cohorts of younger students basics in Scratch and how to create functional code alongside programming basics for objects and robotics in Lego Mindstorms.}
+            \item{Instructed 15 classes of 20 students on designing and printing 3-D models in TinkerCAD.}
+            \item{Crafted STEM curriculum, featuring TinkerCAD modeling projects, Scratch programming problems, and informative lectures on fundamental programming principles to challenge students.}
         \resumeItemListEnd
     
   \resumeSubHeadingListEnd
@@ -184,43 +189,53 @@
     \vspace{1pt}
     \resumeSubHeadingListStart
      \resumeProjectHeading
-        {\textbf{OmniSense (MATLAB, Stable Diffusion)}}{}
+        {\textbf{OmniSense $|$ (MATLAB, Stable Diffusion, Adobe Photoshop)}}{}
             \resumeItemListStart
-            \resumeItem{Challenge winning hackathon project that utilizes MATLAB simulations of software-defined radios emitting monostatic radio frequency waves to assist visually impaired users by informing them of any possible obstructions or objects heading towards them.}
+            \smallskip
+            \resumeItem{Challenge winning hackathon project that utilizes MATLAB simulations of software-defined radios emitting monostatic radio frequency waves.}
+            \resumeItem{Aimed at assisting visually impaired users by informing them of any possible obstructions or objects approaching them in a 360 degree radius.}
+          \resumeItemListEnd
+          \resumeProjectHeading
+        {\textbf{InnerMosaic $|$ (TensorFlow, React Native, Flask)}}{}
+            \resumeItemListStart
+            \smallskip
+            \resumeItem{Hackathon project integrating AI with traditional journaling methods to give users insightful feedback on their journal entries.}
+            \resumeItem{Trained learning module on 1473 journal entries to match words with emotions utilizing BERT.}
+            \resumeItem{Model outputs a mood-sphere based on found sentiments to help users visualize their emotional landscape. }
           \resumeItemListEnd
            \resumeProjectHeading
-        {\textbf{Local (Python, Flask, React)}}{}
+        {\textbf{Local $|$ (TypeScript, Flask, React)}}{}
             \resumeItemListStart
-            \resumeItem{Hackathon project implementing an AI learning module that matches users with companies and local startups in the Buffalo-Niagara area alongside an interactive map that displays all registered companies and their respective locations.  }
+            \smallskip
+            \resumeItem{Hackathon project implementing an AI learning module that matches users with $\sim$1000 local companies and startups in the Buffalo-Niagara area.}
+            \resumeItem{Features an interactive map of company locations and interview processes to assist users.}
           \resumeItemListEnd
       \resumeProjectHeading
-        {\textbf{Trading Models (Python, Pandas, Zipline)}}{}
+        {\textbf{Trading Models $|$ (Python, Pandas, Zipline)}}{}
           \resumeItemListStart
-            \resumeItem{In-progress Python project focused on modeling market data and formulating trading strategies for backtesting on historical American financial markets. Aimed at gaining insights into the impact of volatility and risk factors on decision-making processes during strategy development.}
+          \smallskip
+            \resumeItem{In-progress Python project focused on modeling market data and formulating trading strategies for backtesting on historical American financial markets.}
+            \resumeItem{Aimed at gaining insights into the impact of volatility and risk factors on decision-making processes during strategy development.}
             \resumeItemListEnd
       \resumeProjectHeading
-        {\textbf{Visual Novel (Python, Ren'Py, Stable Diffusion)}}{}
+        {\textbf{Visual Novel $|$ (Python, Ren'Py, Stable Diffusion)}}{}
             \resumeItemListStart
-            \resumeItem{In-progress novel game written in Ren’Py driven by user input with multiple endings. Characters art and background art are personally generated utilizing NovelAI image generation and image diffusion.}
+            \smallskip
+            \resumeItem{In-progress novel game written in Ren’Py driven by user input with 13 varying endings based on user decisions.}
+            \resumeItem{Over 500 differing character and background arts generated utilizing NovelAI image diffusion engine version 2.}
           \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Text Based Dungeon Game (Python)}}{}
-          \resumeItemListStart
-            \resumeItem{A Python user input driven text based game named Marlene’s Dungeon with multiple endings and interactive dialogue.}
-          \resumeItemListEnd
+
     
     \resumeSubHeadingListEnd
-%----------- SKILLS -----------
+%----------- SKILLS ----------- 
 
 \section{Skills}
   \vspace{4pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Programming Languages}{ Proficient: Python ; Familiar: Java, C++, HTML, TypeScript and JavaScript.} \\ \vspace{3pt}
+        \textbf{Frameworks \& Programming Languages}{ Proficient: Python $|$ Familiar: Java, C++, HTML, TensorFlow, React, Flask, MongoDB, Docker, Pandas, Autodesk, Microsoft Office, Adobe Photoshop. } \\ \vspace{3pt}
         
-        \textbf{Certifications/Proficiencies}{ Experience in Flask, MongoDB, Docker, Pandas. Autodesk AutoCAD certified, proficient in Autodesk applications, Microsoft Office, and Adobe applications. } \\ \vspace{3pt}
-        
-        \textbf{Languages}{ English, Conversationally fluent Cantonese.}
+        \textbf{Languages}{ English, Chinese.}
         
     }}
   \resumeSubHeadingListEnd
@@ -229,5 +244,3 @@
 
 %-------------------------------------------
 \end{document}
-
-
